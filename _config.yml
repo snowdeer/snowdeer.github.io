@@ -1,10 +1,10 @@
 # Site Info
 title: Code Holic
-tagline: 'snowdeer''s Code Holic'
-description: '매일매일 배워나가는 개발자 snowdeer의 블로그입니다.'
+tagline: "snowdeer's Code Holic"
+description: "매일매일 배워나가는 개발자 snowdeer의 블로그입니다."
 baseurl: ""
 url: https://snowdeer.github.io
-logo: '/public/logo.png'
+logo: "/public/logo.png"
 
 # Site configurations
 gems:
@@ -18,7 +18,7 @@ sass:
   style: compressed
   sass_dir: _scss
 paginate: 5
-paginate_path: '/blog/page:num'
+paginate_path: "/blog/page:num"
 permalink: pretty
 
 version: 1.0
@@ -29,63 +29,65 @@ author:
   description: 매일매일 공부하는 snowdeer입니다.
   contact:
     #linkedin:  https://www.linkedin.com/in/snowdeer
-    github:    https://github.com/snowdeer
-    facebook:  https://www.facebook.com/snowdeer.seo
+    github: https://github.com/snowdeer
+    facebook: https://www.facebook.com/snowdeer.seo
     #twitter:   https://twitter.com/snowdeer
-    email:     mailto:snowdeer0314@gmail.com
+    email: mailto:snowdeer0314@gmail.com
 
 # Navigation (2nd level links supported)
 nav:
   Home:
-    - '/blog/categories/'
+    - "/blog/categories/"
   Categories:
-    - '/blog/categories/'
+    - "/blog/categories/"
     # - { Categories All: '/blog/categories/' }
-    - { 블로그: '/blog/categories/#블로그' }
-    
-    - { Android: '/blog/categories/#android' }
-    - { Kotlin: '/blog/categories/#kotlin' }
-    - { Java: '/blog/categories/#java' }
-    - { Javascript: '/blog/categories/#javascript' }
-    - { C++: '/blog/categories/#c' }
-    - { Python: '/blog/categories/#python' }
-    - { Node.js: '/blog/categories/#node-js' }
-    - { Go: '/blog/categories/#go' }
-    - { Spring Boot: '/blog/categories/#spring-boot' }
-    - { React: '/blog/categories/#react' }
-    - { Flutter: '/blog/categories/#flutter' }
-    - { Vue.js: '/blog/categories/#vue-js' }
-    - { CSS: '/blog/categories/#css' }
-    
-    - { 알고리즘: '/blog/categories/#알고리즘' }
-    - { Tips: '/blog/categories/#tips' }
-    - { 개발상식: '/blog/categories/#개발상식' }
-    - { Git: '/blog/categories/#git' }
-    - { BlockChain: '/blog/categories/#blockchain' }
-    
-    - { 머신러닝: '/blog/categories/#머신러닝' }
-    - { S/W Architecture: '/blog/categories/#s-w-architecture' }
-    - { 디자인패턴: '/blog/categories/#디자인패턴' }
-    
-    - { Windows: '/blog/categories/#windows' }
-    - { Linux: '/blog/categories/#linux' }
-    - { MAC OS: '/blog/categories/#mac-os' }
-    - { 라즈베리파이: '/blog/categories/#라즈베리파이' }
-    - { ROS2: '/blog/categories/#ros2' }
+    - { 블로그: "/blog/categories/#블로그" }
 
-    - { Docker: '/blog/categories/#docker' }
-    - { Kubernetes: '/blog/categories/#kubernetes' }
-    - { OpenShift: '/blog/categories/#openshift' }
-    
-  Tags: 
-    - '/blog/tags/'
+    - { Android: "/blog/categories/#android" }
+    - { Kotlin: "/blog/categories/#kotlin" }
+    - { Java: "/blog/categories/#java" }
+    - { Javascript: "/blog/categories/#javascript" }
+    - { C++: "/blog/categories/#c" }
+    - { Python: "/blog/categories/#python" }
+    - { Node.js: "/blog/categories/#node-js" }
+    - { Go: "/blog/categories/#go" }
+    - { Spring Boot: "/blog/categories/#spring-boot" }
+    - { React: "/blog/categories/#react" }
+    - { Flutter: "/blog/categories/#flutter" }
+    - { Vue.js: "/blog/categories/#vue-js" }
+    - { CSS: "/blog/categories/#css" }
+
+    - { 알고리즘: "/blog/categories/#알고리즘" }
+    - { Tips: "/blog/categories/#tips" }
+    - { 개발상식: "/blog/categories/#개발상식" }
+    - { Git: "/blog/categories/#git" }
+    - { BlockChain: "/blog/categories/#blockchain" }
+
+    - { 머신러닝: "/blog/categories/#머신러닝" }
+    - { S/W Architecture: "/blog/categories/#s-w-architecture" }
+    - { 디자인패턴: "/blog/categories/#디자인패턴" }
+
+    - { Windows: "/blog/categories/#windows" }
+    - { Linux: "/blog/categories/#linux" }
+    - { MAC OS: "/blog/categories/#mac-os" }
+    - { 라즈베리파이: "/blog/categories/#라즈베리파이" }
+    - { ROS2: "/blog/categories/#ros2" }
+
+    - { Docker: "/blog/categories/#docker" }
+    - { Kubernetes: "/blog/categories/#kubernetes" }
+    - { OpenShift: "/blog/categories/#openshift" }
+
+    - { AI: "/blog/categories/#ai" }
+
+  Tags:
+    - "/blog/tags/"
 
   About:
-    - '/about/'
+    - "/about/"
 
 # Where are tags and categories displayed
-tag_page: '/blog/tags/'
-category_page: '/blog/categories/'
+tag_page: "/blog/tags/"
+category_page: "/blog/categories/"
 
 hero:
   image: /public/img/hello_page.jpg
@@ -93,5 +95,5 @@ hero:
 
 # Pugl-In
 mathjax: true
-google_analytics_token: 'UA-112390680-1'
-disqus_short_name: 'snowdeer'
+google_analytics_token: "UA-112390680-1"
+disqus_short_name: "snowdeer"
