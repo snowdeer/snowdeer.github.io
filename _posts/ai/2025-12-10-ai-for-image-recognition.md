@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 이미지 인식 AI 모델(ViT) 테스트
-category: Kubernetes
-permalink: /kubernetes/:year/:month/:day/:title/
+category: ai
+permalink: /ai/:year/:month/:day/:title/
 
 tag: [ai, model]
 ---
