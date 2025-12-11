@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 이미지 인식 AI 모델(ViT) 테스트
-category: ai
+category: AI
 permalink: /ai/:year/:month/:day/:title/
 
 tag: [ai, model]
