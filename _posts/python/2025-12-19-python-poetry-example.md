@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Poetry 예시 코드
+title: Poetry 샘플 코드
 category: Python
-tag: [Python]
+tag: [Python, Fastapi]
 ---
 
 # Poetry 활용 샘플 코드 작성
@@ -95,7 +95,7 @@ Writing lock file
 
 #### snowdeer_poetry/main.py
 
-```py
+<pre class="prettyprint">
 from fastapi import FastAPI
 
 app = FastAPI()
@@ -103,7 +103,7 @@ app = FastAPI()
 @app.get("/hello")
 async def hello_endpoint():
     return ["hello", "snowdeer"]
-```
+</pre>
 
 ## 실행
 
@@ -125,7 +125,7 @@ INFO:     Waiting for application startup.
 
 #### 수정된 main.py
 
-```py
+<pre class="prettyprint">
 from fastapi import FastAPI
 
 app = FastAPI()
@@ -138,7 +138,7 @@ import uvicorn
 
 def dev_server():
     uvicorn.run("snowdeer_poetry.main:app", host="0.0.0.0", port=8314, reload=True)
-```
+</pre>
 
 #### pyproject.toml
 
