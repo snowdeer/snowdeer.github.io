@@ -34,7 +34,7 @@ $ cd snowdeer-login-sample
 $ poetry add "fastapi[standard]" uvicorn sqlalchemy
 ```
 
-### 샘플 코드 작성
+## 샘플 코드 작성
 
 `snowdeer-login-sample/snowdeer_login_sample/main.py`에 아래 내용 생성
 
