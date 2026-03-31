@@ -10,6 +10,7 @@ tag: [Python]
 ## redis_rpc.py
 
 <pre class="prettyprint">
+import asyncio
 import json
 import uuid
 import redis
@@ -23,13 +24,14 @@ class TimeoutException(Exception):
 
 
 class Server(object):
-    def __init__(self, name, host='localhost', port=6379):
+    def __init__(self, name, host='localhost', port=6379, timeout = None):
         self.__redis = redis.Redis(host=host, port=port)
         self.__prefix = 'pyredisrpc:'
         self.__queue = self.__prefix + name
         self.__response_expire_time = 60
         self.__methods = {}
         self.__is_running = False
+        self.__timeout = timeout
 
     def start(self):
         logging.debug('RedisRpcServer::start()')
@@ -91,9 +93,16 @@ class Server(object):
         params_kw = params[1]
 
         try:
-            result = func(*params_args, **params_kw)
+            result = await asyncio.wait_for(
+                fut=func(*params_args, **params_kw),
+                timeout=self.__timeout,
+            )
             logger.info(f'{method}() is requested. params: {params}, result: {result}')
             self.__send_response(req_id, result)
+        except asyncio.TimeoutError as e:
+            await self.__send_response(
+                req_id, None, f'{type(e)} - Call execution timeout. Slow call is cancelled.',
+            )
         except Exception as e:
             self.__send_response(req_id, None, f'Exception - {repr(e)}')
 
@@ -102,7 +111,7 @@ class Server(object):
             logger.warning(f'Exception - {error_message}')
 
         result = {'id': req_id, 'result': result, 'error': error_message}
-        
+
         key = self.__prefix + req_id
         self.__redis.rpush(key, json.dumps(result))
         self.__redis.expire(key, self.__response_expire_time)
