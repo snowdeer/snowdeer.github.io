@@ -56,7 +56,23 @@ rm ~/.kube/config.tmp
 ## 클러스터 확인
 
 <pre class="prettyprint">
-kubectl get nodes
+$ kubectl get nodes
+
 NAME    STATUS   ROLES           AGE   VERSION
 node1   Ready    control-plane   28m   v1.35.1
+</pre>
+
+<pre class="prettyprint">
+$ kubectl get pods -A
+
+NAMESPACE     NAME                                      READY   STATUS    RESTARTS   AGE
+kube-system   calico-kube-controllers-5bc89bc76-w6rpm   1/1     Running   0          63m
+kube-system   calico-node-5p2vf                         1/1     Running   0          63m
+kube-system   coredns-58cc5d8ddf-f877q                  1/1     Running   0          63m
+kube-system   dns-autoscaler-7ccf68df7c-m75nw           1/1     Running   0          63m
+kube-system   kube-apiserver-node1                      1/1     Running   0          64m
+kube-system   kube-controller-manager-node1             1/1     Running   0          64m
+kube-system   kube-proxy-qzdzj                          1/1     Running   0          64m
+kube-system   kube-scheduler-node1                      1/1     Running   0          64m
+kube-system   nodelocaldns-b4t9q                        1/1     Running   0          63m
 </pre>
