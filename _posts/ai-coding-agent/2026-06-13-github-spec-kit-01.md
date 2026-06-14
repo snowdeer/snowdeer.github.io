@@ -77,14 +77,14 @@ Specify CLI is ready to use!
 $ specify init snowdeer-sample-project
 ```
 
-![alt text](spec-kit-001.png)
+![alt text](/assets/ai-agent/spec-kit-001.png)
 
 AI 모델을 선택할 수 있음  
 여기서는 `claude` 선택
 
 그 이후 `sh (POSIX Shell (bash/zsh))` 선택
 
-![alt text](spec-kit-002.png)
+![alt text](/assets/ai-agent/spec-kit-002.png)
 
 그 이후 해당 디렉토리에 가면 아래와 같은 문서들이 생긴 것을 확인할 수 있음
 
