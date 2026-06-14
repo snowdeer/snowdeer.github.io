@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AI 활용 개발 방법론
-category: claude
+category: Claude
 permalink: /common-sense/:year/:month/:day/:title/
 
 tag: [claude]
