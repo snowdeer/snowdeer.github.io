@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CLAUDE.md 예제 (Vue3)
-category: Claude
+category: AI Coding Agent
 permalink: /common-sense/:year/:month/:day/:title/
 
 tag: [claude]

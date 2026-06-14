@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CLAUDE.md로 프로젝트 설정하기
-category: Claude
+category: AI Coding Agent
 permalink: /common-sense/:year/:month/:day/:title/
 
 tag: [claude]

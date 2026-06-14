@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AI 활용 개발 방법론
-category: Claude
+category: AI Coding Agent
 permalink: /common-sense/:year/:month/:day/:title/
 
 tag: [claude]

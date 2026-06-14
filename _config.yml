@@ -78,7 +78,7 @@ nav:
     - { OpenShift: "/blog/categories/#openshift" }
 
     - { AI: "/blog/categories/#ai" }
-    - { Claude: "/blog/categories/#claude" }
+    - { AI Coding Agent: "/blog/categories/#ai-coding-agent" }
 
   Tags:
     - "/blog/tags/"
