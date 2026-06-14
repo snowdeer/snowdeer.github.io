@@ -1,6 +1,6 @@
 ---
 layout: post
-title: spec-kit 사용법
+title: spec-kit 설치 및 사용법
 category: AI Coding Agent
 permalink: /common-sense/:year/:month/:day/:title/
 
@@ -28,14 +28,7 @@ specify 0.10.3.dev0
 # 시스템 요구사항 체크
 $ specify check
 
-                                                                                                   ███████╗██████╗ ███████╗ ██████╗██╗███████╗██╗   ██╗
-                                                                                                   ██╔════╝██╔══██╗██╔════╝██╔════╝██║██╔════╝╚██╗ ██╔╝
-                                                                                                   ███████╗██████╔╝█████╗  ██║     ██║█████╗   ╚████╔╝
-                                                                                                   ╚════██║██╔═══╝ ██╔══╝  ██║     ██║██╔══╝    ╚██╔╝
-                                                                                                   ███████║██║     ███████╗╚██████╗██║██║        ██║
-                                                                                                   ╚══════╝╚═╝     ╚══════╝ ╚═════╝╚═╝╚═╝        ╚═╝
-
-                                                                                                    GitHub Spec Kit - Spec-Driven Development Toolkit
+GitHub Spec Kit - Spec-Driven Development Toolkit
 
 Checking for installed tools...
 
@@ -43,7 +36,39 @@ Check Available Tools
 ├── ● Antigravity (available)
 ├── ● Amp (not found)
 ├── ● Auggie CLI (not found)
-...
+├── ○ IBM Bob (IDE-based, no CLI check)
+├── ● Claude Code (available)
+├── ○ Cline (IDE-based, no CLI check)
+├── ● CodeBuddy (not found)
+├── ● Codex CLI (not found)
+├── ○ GitHub Copilot (IDE-based, no CLI check)
+├── ○ Cursor (IDE-based, no CLI check)
+├── ● Devin for Terminal (not found)
+├── ● Forge (not found)
+├── ● Gemini CLI (not found)
+├── ● Goose (not found)
+├── ● Hermes Agent (not found)
+├── ● iFlow CLI (not found)
+├── ● Junie (not found)
+├── ○ Kilo Code (IDE-based, no CLI check)
+├── ● Kimi Code (not found)
+├── ● Kiro CLI (not found)
+├── ○ Lingma (IDE-based, no CLI check)
+├── ● opencode (not found)
+├── ● Pi Coding Agent (not found)
+├── ● Qoder CLI (not found)
+├── ● Qwen Code (not found)
+├── ○ Roo Code (IDE-based, no CLI check)
+├── ● RovoDev ACLI (not found)
+├── ● SHAI (not found)
+├── ● Tabnine CLI (not found)
+├── ○ Trae (IDE-based, no CLI check)
+├── ● Mistral Vibe (not found)
+├── ○ Windsurf (IDE-based, no CLI check)
+├── ● Visual Studio Code (available)
+└── ● Visual Studio Code Insiders (not found)
+
+Specify CLI is ready to use!
 ```
 
 ## 프로젝트 시작하기
@@ -127,4 +152,10 @@ AI 모델을 선택할 수 있음
 │       │   └── workflow.yml
 │       └── workflow-registry.json
 └── CLAUDE.md
+```
+
+또는 해당 디렉토리 들어가서 아래 명령어로 시작
+
+```sh
+specify init .
 ```
