@@ -102,7 +102,7 @@ tag: [claude]
 
 ![alt text](/assets/ai-agent/spec-kit-009.png)
 
-## 5. speckit-implement
+## speckit-implement
 
 ```sh
 /speckit-implement
@@ -120,3 +120,4 @@ tag: [claude]
 
 이 상태에서 완벽히 동작하는 코드가 나오지는 않음  
 테스트를 계속하면서 올바르게 동작하는 코드를 만들어가야 함
+이러한 문제를 해결하기 위해서 `spec-kit`을 더 잘 활용할 수 있는 방법은 다음 포스팅에서 진행
