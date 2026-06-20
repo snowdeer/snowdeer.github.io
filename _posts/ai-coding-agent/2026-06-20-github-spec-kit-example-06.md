@@ -23,32 +23,26 @@ tag: [claude]
 /speckit-specify
 
 ## 기능요구사항
-- 프론트엔드에 유튜브 URL 입력 기능이 있음
+- GUI 화면에 유튜브 URL 입력 기능이 있음
 - 입력받은 URL을 이용해서 유튜브 다운로드 기능 실행
 - 저장옵션 선택(ex. mp4, mp3)
 - 다운로드 진행상황 표시
 
 ## 기술스택
-- uv 기반 파이썬 패키지 관리
-- FastAPI
-- Vue3 + TypeScript
-- vite
+- Flutter
+- Android SDK
 ```
 
-## speckit-plan
+## speckit-clarify
 
 ```md
-/speckit-plan
-
-한글로 개발 계획 생성해줘.
+/speckit-clarify
 ```
 
-## speckit-tasks
+## speckit-plan & speckit-tasks
 
 ```md
-/speckit-tasks
-
-한글로 진행해줘.
+/speckit-plan 과 /speckit-tasks 를 한꺼번에 진행해줘. 한글로 진행해줘
 ```
 
 ## speckit-implement
@@ -56,5 +50,9 @@ tag: [claude]
 ```sh
 /speckit-implement
 
-지금까지의 설계를 이용해서 구현해줘.
+모든 과정을 한꺼번에 진행해줘
 ```
+
+## 개발 완료 코드
+
+- https://github.com/snowdeer/snowdeer-android-youtube-downloader
